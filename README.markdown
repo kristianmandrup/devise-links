@@ -1,8 +1,33 @@
-= devise-links
+# Devise links
 
-Description goes here.
+View link helpers for Devise actions
 
-== Note on Patches/Pull Requests
+## Install
+
+<code>gem install devise-links</code>
+
+## Usage
+
+<pre>
+  <%= new_registration_link(:role => :admin) %>
+  
+  <%= sign_out_link(:role => :admin, :label => 'Log me out!') %>
+</pre>
+
+## TODO
+
+Make API more generic...
+
+<pre>
+  <%= new_registration_link(:admin) %>
+  
+  <%= sign_out_link(:admin, 'Log out') %>
+  
+  <%= new_registration_link('Register!') %>  
+</pre>
+
+
+## Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
