@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'devise-links/link/registration'
 
 describe Devise::Link::Registration do
-
+  
   extend_view_with Devise::Link::Registration
   
   describe '#new_registration_link' do

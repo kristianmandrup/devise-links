@@ -1,5 +1,7 @@
 module Devise::Link
-  module Registration
+  module Registration  
+    include Rails3::Assist::BaseHelper
+    
     REGISTRATION_LINKS = {
       :new_registration => :sign_up,
       :edit_registration => :edit_profile

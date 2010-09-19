@@ -7,10 +7,12 @@ begin
     gem.email = "kmandrup@gmail.com"
     gem.homepage = "http://github.com/kristianmandrup/devise-links"
     gem.authors = ["Kristian Mandrup"]
-    gem.add_development_dependency "rspec", "~> 2.0.0"
-    gem.add_development_dependency "devise", "~> 1.1"
-    gem.add_dependency 'require_all', "~> 1.1"
-    gem.add_dependency 'sugar-high', "~> 0.1"     
+    gem.add_development_dependency "rspec",               "~> 2.0.0.beta.22"
+    gem.add_development_dependency "rspec-action_view",   "~> 0.3.1"
+
+    gem.add_dependency "devise",        "~> 1.1.2"
+    gem.add_dependency 'require_all',   "~> 1.1.0"
+    gem.add_dependency 'sugar-high',    "~> 0.2.10"     
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

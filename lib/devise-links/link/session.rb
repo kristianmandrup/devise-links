@@ -1,4 +1,4 @@
-module AuthAssistant::Link
+module Devise::Link
   module Session            
     SESSION_LINKS = {
       :sign_out => :log_out,
