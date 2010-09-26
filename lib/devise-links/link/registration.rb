@@ -1,6 +1,5 @@
 module Devise::Link
   module Registration  
-    include Rails3::Assist::BaseHelper
     
     REGISTRATION_LINKS = {
       :new_registration => :sign_up,

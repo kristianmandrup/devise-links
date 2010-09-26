@@ -17,7 +17,7 @@ describe Devise::Link::Session do
         res = e.run_template do 
           %{<%= sign_out_link(:role => :admin) %> }
         end
-        res.should match /it works/
+        res.should match /it works/                
       end                     
     end
   end
