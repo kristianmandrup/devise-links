@@ -1,10 +1,18 @@
 # Devise links
 
-View link helpers for Devise actions
+View link helpers for [Devise](http://github.com/plataformatec/devise) actions
 
 ## Install
 
 <code>gem install devise-links</code>
+
+Alternatively insert into Rails 3 Gemfile:
+
+<pre>
+  gem 'devise-links'
+</pre>
+
+and from the terminal run: *bundle install*
 
 ## Usage
 
@@ -37,6 +45,6 @@ Make API more generic...
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+## Copyright
 
 Copyright (c) 2010 Kristian Mandrup. See LICENSE for details.
