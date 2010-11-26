@@ -1,4 +1,6 @@
-module Devise::Link
+require 'devise-links/labels'
+
+module Devise::Links
   module Session            
     SESSION_LINKS = {
       :sign_out => :log_out,
@@ -11,7 +13,7 @@ module Devise::Link
     SESSION_LINKS.keys.each_with_index do |name, index|
       class_eval %{
         def #{name}_link(options = {})
-          label = options[:label] || auth_labels[:#{name}]
+          label = options[:label] || #{name}_label
           path = #{ACTIONS[index]}_session_path options[:role]
           link_to(label, path)
         end          

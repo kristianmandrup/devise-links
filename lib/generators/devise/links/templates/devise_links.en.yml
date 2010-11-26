@@ -1,0 +1,9 @@
+en:
+  cream:
+    confirm: 'Are you sure?'
+    actions:
+      auth:
+        sign_in: "Sign in"
+        sign_out: "Sign out"
+        sign_up: "Sign up"
+        edit_registration: "Edit registration"

@@ -12,15 +12,16 @@ Alternatively insert into Rails 3 Gemfile:
   gem 'devise-links'
 </pre>
 
-and from the terminal run: *bundle install*
+Run <code>$ bundle install</code> in terminal from root of Rails app
 
 ## Usage
 
 <pre>
-  <%= new_registration_link(:role => :admin) %>
-  
+  <%= new_registration_link(:role => :admin) %>  
   <%= sign_out_link(:role => :admin, :label => 'Log me out!') %>
 </pre>
+
+See specs for demonstrations of how to use the API etc.
 
 ## TODO
 

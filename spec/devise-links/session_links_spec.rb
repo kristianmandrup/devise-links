@@ -1,23 +1,25 @@
 require 'spec_helper'
-require 'devise-links/link/session'
+require 'devise-links/links/session'
+require 'devise-links/links/labels'
 
-describe Devise::Link::Session do
+describe Devise::Links::Session do
 
-  extend_view_with Devise::Link::Session
+  extend_view_with Devise::Links::Session
+  extend_view_with Devise::Links::Labels
   
   describe '#sign_out_link' do
     it "should create a sign out link" do
-      with_engine do |e, view|
+      view_engine do |e, view|
         label = 'log out'
         path = 'admin/log/out'        
-        view.stubs(:auth_labels).returns(:sign_out => label)
         view.stubs(:destroy_session_path).with(:admin).returns path
-        view.stubs(:link_to).with(label, path).returns 'it works'        
+        output_label = view.sign_out_label
+        view.stubs(:link_to).returns output_label
 
         res = e.run_template do 
           %{<%= sign_out_link(:role => :admin) %> }
         end
-        res.should match /it works/                
+        res.should match /#{output_label}/                
       end                     
     end
   end

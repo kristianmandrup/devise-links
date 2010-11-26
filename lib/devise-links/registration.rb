@@ -1,6 +1,7 @@
-module Devise::Link
-  module Registration  
-    
+require 'devise-links/labels'
+
+module Devise::Links
+  module Registration    
     REGISTRATION_LINKS = {
       :new_registration => :sign_up,
       :edit_registration => :edit_profile
@@ -12,8 +13,8 @@ module Devise::Link
     REGISTRATION_LINKS.keys.each do |name|
       class_eval %{
         def #{name}_link(options = {})          
-          label = options[:label] || auth_labels[:#{name}]
-          path = #{name}_path options[:role]
+          label = options[:label] || #{name}_label
+          path = #{name}_path options[:role] 
           link_to(label, path)
         end          
       }
