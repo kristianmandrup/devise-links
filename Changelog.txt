@@ -1,0 +1,5 @@
+Nov 26, 2010
+---
+Major update to make the gem independent of Cream
+* Removed dependency on #auth_labels method in Cream, now uses internal #labels method
+* Added devise:links generator that can generate a 'cream' locale file for the labels used
