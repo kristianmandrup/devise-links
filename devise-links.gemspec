@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
+     "Changelog.txt",
      "devise-links.gemspec",
      "lib/devise-links.rb",
      "lib/devise-links/labels.rb",
