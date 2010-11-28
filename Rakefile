@@ -11,7 +11,7 @@ begin
     gem.add_development_dependency "rspec-action_view",   "~> 0.3.4"
     gem.add_development_dependency 'generator-spec',      ">= 0.7.0"
 
-    gem.add_dependency "devise",              ">= 1.2"
+    gem.add_dependency "devise",              ">= 1.1.5"
     gem.add_dependency 'activesupport',       ">= 3.0.0"
     gem.add_dependency 'require_all',         "~> 1.2.0"
     gem.add_dependency 'sugar-high',          "~> 0.3.0"
