@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{devise-links}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup"]
-  s.date = %q{2010-11-28}
+  s.date = %q{2011-01-10}
   s.description = %q{Link helpers for Devise actions, including user session and registration links.}
   s.email = %q{kmandrup@gmail.com}
   s.extra_rdoc_files = [
@@ -57,39 +57,39 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, [">= 2.0.0"])
+      s.add_development_dependency(%q<rspec>, [">= 2.0.1"])
       s.add_development_dependency(%q<rspec-action_view>, ["~> 0.3.4"])
       s.add_development_dependency(%q<generator-spec>, [">= 0.7.0"])
       s.add_runtime_dependency(%q<devise>, [">= 1.1.5"])
       s.add_runtime_dependency(%q<activesupport>, [">= 3.0.0"])
       s.add_runtime_dependency(%q<require_all>, ["~> 1.2.0"])
-      s.add_runtime_dependency(%q<sugar-high>, ["~> 0.3.0"])
+      s.add_runtime_dependency(%q<sugar-high>, ["~> 0.3.1"])
       s.add_runtime_dependency(%q<r3_plugin_toolbox>, [">= 0.4.0"])
       s.add_runtime_dependency(%q<rails3_artifactor>, [">= 0.3.1"])
-      s.add_runtime_dependency(%q<logging_assist>, ["~> 0.1.6"])
+      s.add_runtime_dependency(%q<logging_assist>, [">= 0.2.0"])
     else
-      s.add_dependency(%q<rspec>, [">= 2.0.0"])
+      s.add_dependency(%q<rspec>, [">= 2.0.1"])
       s.add_dependency(%q<rspec-action_view>, ["~> 0.3.4"])
       s.add_dependency(%q<generator-spec>, [">= 0.7.0"])
       s.add_dependency(%q<devise>, [">= 1.1.5"])
       s.add_dependency(%q<activesupport>, [">= 3.0.0"])
       s.add_dependency(%q<require_all>, ["~> 1.2.0"])
-      s.add_dependency(%q<sugar-high>, ["~> 0.3.0"])
+      s.add_dependency(%q<sugar-high>, ["~> 0.3.1"])
       s.add_dependency(%q<r3_plugin_toolbox>, [">= 0.4.0"])
       s.add_dependency(%q<rails3_artifactor>, [">= 0.3.1"])
-      s.add_dependency(%q<logging_assist>, ["~> 0.1.6"])
+      s.add_dependency(%q<logging_assist>, [">= 0.2.0"])
     end
   else
-    s.add_dependency(%q<rspec>, [">= 2.0.0"])
+    s.add_dependency(%q<rspec>, [">= 2.0.1"])
     s.add_dependency(%q<rspec-action_view>, ["~> 0.3.4"])
     s.add_dependency(%q<generator-spec>, [">= 0.7.0"])
     s.add_dependency(%q<devise>, [">= 1.1.5"])
     s.add_dependency(%q<activesupport>, [">= 3.0.0"])
     s.add_dependency(%q<require_all>, ["~> 1.2.0"])
-    s.add_dependency(%q<sugar-high>, ["~> 0.3.0"])
+    s.add_dependency(%q<sugar-high>, ["~> 0.3.1"])
     s.add_dependency(%q<r3_plugin_toolbox>, [">= 0.4.0"])
     s.add_dependency(%q<rails3_artifactor>, [">= 0.3.1"])
-    s.add_dependency(%q<logging_assist>, ["~> 0.1.6"])
+    s.add_dependency(%q<logging_assist>, [">= 0.2.0"])
   end
 end
 
