@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup"]
-  s.date = %q{2011-03-04}
+  s.date = %q{2011-03-09}
   s.description = %q{Link helpers for Devise actions, including user session and registration links.}
   s.email = %q{kmandrup@gmail.com}
   s.extra_rdoc_files = [
@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.markdown",
     "Rakefile",
     "VERSION",
+    "devise-links.gemspec",
     "lib/devise-links.rb",
     "lib/devise-links/labels.rb",
     "lib/devise-links/namespaces.rb",
